@@ -1,3 +1,7 @@
+######### PLOT 2 ############
+
+#############################
+## READ THE DATA ##
 ## clear the global environment
 rm(list=ls())
 ## read the table
@@ -16,7 +20,8 @@ data$Sub_metering_2 <- as.numeric(data$Sub_metering_2)
 data$Sub_metering_3 <- as.numeric(data$Sub_metering_3)
 x1name="Global Active Power (kilowatts)"
 
-
+###############################
+## CREATE THE PLOT ##
 ## 2nd plot
 png(filename="plot2.png",width=480, height=480,units='px')
 with(data, plot(Datetime,Global_active_power,type="l",ylab=x1name,xlab=""))

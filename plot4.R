@@ -1,3 +1,7 @@
+######### PLOT 4 ############
+
+#############################
+## READ THE DATA ##
 ## clear the global environment
 rm(list=ls())
 ## read the table
@@ -16,7 +20,8 @@ data$Sub_metering_2 <- as.numeric(data$Sub_metering_2)
 data$Sub_metering_3 <- as.numeric(data$Sub_metering_3)
 x1name="Global Active Power (kilowatts)"
 
-
+###############################
+## CREATE THE PLOT ##
 ## 4th plot
 png(filename="plot4.png",width=480,height=480,units="px")
 par(mfrow=c(2,2))
